@@ -6,48 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="fundo">
         <div class="titulo"><h1>Vinicius Roberto</h1></div>
         <div class="calculadora">
-            <div class="caixa-r"><p>teste</p></div>
+            <div class="caixa-r"><p id="resultado"></p></div>
                 <div class="painel">
                     
                     <div class="coluna">
-                        <button class="button-c">X</button>
-                        <button class="button-c">-</button>
-                        <button class="button-c">+</button>
-                        <button class="button-c" id="ingual">=</button>
+                        <button onclick="inserir('*')" class="button-c">x</button>
+                        <button onclick="inserir('-')" class="button-c">-</button>
+                        <button onclick="inserir('+')" class="button-c">+</button>
+                        <button onclick="calcular()"class="button-c" id="ingual">=</button>
                     </div>
 
                     <div class="linha">
-                        <button class="button-l">C</button>
-                        <button class="button-l"><</button>
-                        <button class="button-l">/</button>
+                        <button onclick="limpar()" class="button-l" >C</button>
+                        <button onclick="apagado3x()" class="button-l"><</button>
+                        <button onclick="inserir('/')" class="button-l">/</button>
                     </div>
 
                     <div class="linha">
-                        <button class="button-l">7</button>
-                        <button class="button-l">8</button>
-                        <button class="button-l">9</button>
+                        <button onclick="inserir('7')" class="button-l">7</button>
+                        <button onclick="inserir('8')" class="button-l">8</button>
+                        <button onclick="inserir('9')" class="button-l">9</button>
                     </div>
 
                     <div class="linha">
-                        <button class="button-l">4</button>
-                        <button class="button-l">5</button>
-                        <button class="button-l">6</button>
+                        <button onclick="inserir('4')" class="button-l">4</button>
+                        <button onclick="inserir('5')" class="button-l">5</button>
+                        <button onclick="inserir('6')" class="button-l">6</button>
                     </div>  
 
                     <div class="linha">
-                        <button class="button-l">1</button>
-                        <button class="button-l">2</button>
-                        <button class="button-l">3</button>
+                        <button onclick="inserir('1')" class="button-l">1</button>
+                        <button onclick="inserir('2')" class="button-l">2</button>
+                        <button onclick="inserir('3')" class="button-l">3</button>
                     </div>
 
                     <div class="linha">
-                        <button class="button-l">0</button>
-                        <button class="button-l">.</button>
+                        <button onclick="inserir('0')" class="button-l">0</button>
+                        <button onclick="inserir('.')" class="button-l">.</button>
                     </div>
                 </div>
         </div>

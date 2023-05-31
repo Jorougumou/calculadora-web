@@ -93,6 +93,7 @@ button{
     background-color: rgb(54, 54, 54);
     border:0px solid white;
     color: white;
+    cursor: pointer;
 }
 
 button:active{
